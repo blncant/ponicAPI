@@ -9,6 +9,9 @@ export const getOrdenes = async (req: Request, res: Response): Promise<void> => 
 
 	const orders = await Order.find(consulta);
 
+	//prueba
+	// res.header("Access-Control-Allow-Origin", "http://localhost:3000/");
+
 	res.json({
 		data: [...orders],
 	});
