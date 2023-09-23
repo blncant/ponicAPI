@@ -13,8 +13,7 @@ interface IItem {
 	price: number;
 	quantity: number;
 	title: string;
-
-	cardImg: string;
+	img: string;
 }
 
 export interface IOrder {
@@ -68,7 +67,7 @@ const OrderSchema = new Schema<IOrder>({
 					type: String,
 					required: true,
 				},
-				cardImg: {
+				img: {
 					type: String,
 					required: true,
 				},
