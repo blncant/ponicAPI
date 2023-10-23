@@ -38,7 +38,7 @@ export class Server {
 	middlewares(): void {
 		this.app.use(
 			cors({
-				origin: "https://ponic-api.vercel.app",
+				origin: "https://front-ponic.vercel.app",
 			})
 		);
 		this.app.use(express.json());
