@@ -26,10 +26,19 @@ export class Server {
 		await dbConnection();
 	}
 
-	middlewares(): void {
+	/* middlewares(): void {
 		this.app.use(
 			cors({
 				origin: "http://localhost:3000",
+			})
+		);
+		this.app.use(express.json());
+	} */
+
+	middlewares(): void {
+		this.app.use(
+			cors({
+				origin: "https://ponic-api.vercel.app",
 			})
 		);
 		this.app.use(express.json());
